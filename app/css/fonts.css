@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Chivo-Regular";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/eot/Chivo-Regular.eot");
+	src:
+  	url('../fonts/eot/Chivo-Regular.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/woff/Chivo-Regular.woff") format("woff"),
+		url("../fonts/ttf/Chivo-Regular.ttf") format("truetype"),
+		url("../fonts/svg/Chivo-Regular.svg#Chivo-Light") format('svg');
+}
+
+@font-face {
+	font-family: "Chivo-Black";
+	font-weight: 900;
+	font-style: normal;
+	src: url("../fonts/eot/Chivo-Black.eot");
+	src:
+		url('../fonts/eot/Chivo-Black.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/woff/Chivo-Black.woff") format("woff"),
+		url("../fonts/ttf/Chivo-Black.ttf") format("truetype"),
+		url("../fonts/svg/Chivo-Black.svg#Chivo-Black") format('svg');
+}
+
+@font-face {
+	font-family: "Chivo-Bold";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../fonts/eot/Chivo-Bold.eot");
+	src:
+		url('../fonts/eot/Chivo-Bold.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/woff/Chivo-Bold.woff") format("woff"),
+		url("../fonts/ttf/Chivo-Bold.ttf") format("truetype"),
+		url("../fonts/svg/Chivo-Bold.svg#Chivo-Bold") format('svg');
+}
+
+@font-face {
+	font-family: "Chivo-BoldItalic";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../fonts/eot/Chivo-BoldItalic.eot");
+	src:
+  	url('../fonts/eot/Chivo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/woff/Chivo-BoldItalic.woff") format("woff"),
+		url("../fonts/ttf/Chivo-BoldItalic.ttf") format("truetype"),
+		url("../fonts/svg/Chivo-BoldItalic.svg#Chivo-BoldItalic") format('svg');
+}
+
+@font-face {
+	font-family: "Chivo-Light";
+	font-weight: 200;
+	font-style: normal;
+	src: url("../fonts/eot/Chivo-Light.eot");
+	src:
+  	url('../fonts/eot/Chivo-Light.eot?#iefix') format('embedded-opentype'),
+		url("../fonts/woff/Chivo-Light.woff") format("woff"),
+		url("../fonts/ttf/Chivo-Light.ttf") format("truetype"),
+		url("../fonts/svg/Chivo-Light.svg#Chivo-Light") format('svg');
+}

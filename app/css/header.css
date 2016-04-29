@@ -1,0 +1,43 @@
+body {
+  font-size: 16px;
+  min-width: 320px;
+  line-height: 1.6;
+  font-family: "Chivo-Regular", sans-serif;
+  overflow-x: hidden;
+  background-color: #222222; }
+
+header {
+  background-color: transparent; }
+
+.logo {
+  width: 8vw;
+  margin: 0 auto;
+  padding: 5% 0; }
+  .logo svg {
+    width: 9vw;
+    height: 9vw; }
+
+#header h1, #header h2 {
+  color: #dcdcdc;
+  font-family: "Chivo-Black";
+  font-size: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #030303; }
+
+#header h2, #header p {
+  font-family: 'Chivo-Light';
+  font-size: 32px; }
+
+#header p {
+  color: #dcdcdc;
+  font-size: 26px;
+  text-align: center; }
+
+#header .button_container {
+  width: 6vw;
+  margin: 0 auto;
+  padding-top: 12%; }
+  #header .button_container svg {
+    width: 6vw;
+    height: 6vw; }

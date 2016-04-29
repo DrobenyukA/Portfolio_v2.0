@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "my another portfolio for step_rv",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.4",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DrobenyukA/Portfolio_v2.0.git"
+  },
+  "keywords": [
+    "porfolio",
+    "step_rv"
+  ],
+  "author": "DrobenyukA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrobenyukA/Portfolio_v2.0/issues"
+  },
+  "homepage": "https://dro-dev-rv.esy.es"
+}
