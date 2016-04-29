@@ -238,11 +238,16 @@
 
 /*-------------------------Contact-------------------------*/
 #contact
-	padding: 5% 10%
+	padding: 2% 10% 5% 10%
 	background-color: $text_color
 	h2
-		margin-bottom: 5%
+		margin: 0
+		padding: 5% 0
 		color: $theme_header_color
+		background-image: url('../img/svg/hexagon_round_bg.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
 		font-family: "Chivo-Black"
 		font-size: 42px
 		text-align: center
@@ -253,7 +258,7 @@
 		text-align: center
 	form
 		width: 75%
-		margin: 0 auto
+		margin: 50px auto 0 auto
 		input
 			width: 100%
 			margin: 5% auto
@@ -267,7 +272,7 @@
 			outline: none
 			&:focus
 				color: $theme_header_color
-				border-bottom: 2px solid $theme_text_color
+				border-bottom: 2px solid $theme_color
 				border-left: 1px solid $theme_color
 				border-right: 1px solid $theme_color
 				transition: all 0.5s
@@ -284,11 +289,14 @@
 				transition: all 0.5s
 	ul
 		width: 100%
-		padding: 10% 5%
+		padding: 15% 5%
 		text-align: center
-		background-color: $header_color
+		background-image: url('../img/svg/hexagon_round.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
 		li
-			margin-top: 10px
+			margin-bottom: 10px
 			list-style-type: none
 			color: $text_color
 footer
