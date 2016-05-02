@@ -32,6 +32,7 @@ function heightDetect(){
 		imageSrc: '../img/project_4.jpg',
 		zIndex: '-1'
 	});
+	
 /*------------ menu fixing ------------*/
 $(window).scroll(function () {
 	var menu = $(window).height() - 50,

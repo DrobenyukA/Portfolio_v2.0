@@ -19,6 +19,7 @@
 				padding: 5px
 				width: 100%
 				margin: 0 auto
+				cursor: context-menu
 				li
 					display: inline-block
 					height: 50px
@@ -121,7 +122,7 @@
 				top: 0
 				left: 0
 				width: 100%
-				height: 100%
+				height: 100%ыщту
 				box-sizing: border-box
 			&:after
 				transform: rotate(60deg)
@@ -135,10 +136,15 @@
 		margin-top: 75px
 		color: $theme_text_color
 		text-align: center
+	h4
+		margin-top: 25px
+		color: $header_color
+		text-transform: uppercase
+		text-align: center
 	p
 		width: 75%
-		margin: 25px auto 0 auto
-		color: $header_color
+		margin: 0 auto 
+		color: $text_color
 		text-align: center
 	.slider
 		position: relative
@@ -165,24 +171,41 @@
 	background-color: $main_color_hover
 /*--------------------------Skills--------------------------*/
 #skills
-	padding: 5% 2%
+	padding: 5% 0 10% 0
 	color: $text_color
 	background-color: $main_color_bg
 	h2
 		margin-bottom: 50px
+		padding: 4% 0
 		color: $theme_header_color
+		background-image: url('../img/svg/hexagon_round_bg_dark.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
 		font-family: "Chivo-Black"
 		font-size: 42px
 		text-align: center
 		text-transform: uppercase
 		text-shadow: 0 0 5px $main_color
 		letter-spacing: 2px
+	.text
+		padding-top: 3vw
+	hr
+		margin: 45px 0
+		border-color: transparent
 	h3
 		color: $theme_text_color
+		font-size: 26px
 		text-align: center
 	p
+		padding: 5% 0
+		font-size: 18px
 		text-align: center
-
+#language, #frameworks, #software, #opersys
+	display: block
+	width: 20vw
+	height: 20vw
+	margin: 0 auto
 /*--------------------------Portfolio--------------------------*/
 #portfolio .first, #portfolio .second, #portfolio .third, #portfolio .fourth
 	padding: 0
@@ -299,6 +322,8 @@
 			margin-bottom: 10px
 			list-style-type: none
 			color: $text_color
+			i
+				color: $main_color_hex
 footer
 	padding: 1% 0 
 	background-color: $theme_header_color
