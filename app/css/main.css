@@ -1,56 +1,13 @@
-@charset "UTF-8";
 /*----------------*About*----------------*/
 #about {
-  background-image: url("../img/about_bg.jpg"); }
+  background-image: url("../img/about_bg.jpg");
+  overflow-x: hidden; }
   #about .wrapper {
     position: relative;
     width: 100%;
     height: 800px;
     padding: 5% 0;
     background-color: rgba(255, 0, 0, 0.6); }
-    #about .wrapper nav {
-      position: absolute;
-      width: 100%;
-      top: -100px;
-      z-index: 2; }
-      #about .wrapper nav ul {
-        margin: 0;
-        padding: 5px;
-        width: 100%;
-        margin: 0 auto;
-        cursor: context-menu; }
-        #about .wrapper nav ul li {
-          display: inline-block;
-          height: 50px;
-          color: #dcdcdc;
-          line-height: 50px;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-family: "Chivo-Bold";
-          vertical-align: middle; }
-          #about .wrapper nav ul li a {
-            padding: 15px 30px;
-            color: inherit; }
-            #about .wrapper nav ul li a:hover {
-              color: rgba(255, 0, 0, 0.6);
-              -webkit-transition: all 0.5s;
-              transition: all 0.5s;
-              background-color: rgba(3, 3, 3, 0.6);
-              text-decoration: none; }
-          #about .wrapper nav ul li:first-child a:hover {
-            background-color: transparent; }
-          #about .wrapper nav ul li svg {
-            width: 50px;
-            height: 50px;
-            margin-right: 45px; }
-      #about .wrapper nav .social li {
-        margin-left: 5px; }
-        #about .wrapper nav .social li a {
-          padding: 0; }
-          #about .wrapper nav .social li a:hover {
-            background-color: transparent; }
-          #about .wrapper nav .social li a svg {
-            margin: 0; }
   #about h2 {
     margin-bottom: 50px;
     color: #A9A9A9;
@@ -60,118 +17,135 @@
     text-transform: uppercase;
     text-shadow: 0 0 5px #030303;
     letter-spacing: 2px; }
-  #about .personal_descr {
-    width: 900px;
-    height: 500px;
+
+.personal_descr {
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 2% 5%;
+  padding-top: 105px;
+  border-radius: 2px;
+  background-color: #222222;
+  box-shadow: 3px 3px 15px #030303; }
+  .personal_descr .hexagon, .personal_descr .hexagon_small {
+    position: relative;
+    width: 175px;
     margin: 0 auto;
-    padding: 2% 5%;
-    padding-top: 105px;
-    border-radius: 2px;
-    background-color: #222222;
-    box-shadow: 3px 3px 15px #030303; }
-    #about .personal_descr .hexagon, #about .personal_descr .hexagon_small {
-      position: relative;
-      width: 175px;
-      margin: 0 auto;
-      box-sizing: border-box; }
-      #about .personal_descr .hexagon_container, #about .personal_descr .hexagon_small_container {
-        height: 100px;
-        background: url("../img/foto.jpg") no-repeat left center;
-        background-size: cover; }
-        #about .personal_descr .hexagon_container--bg1, #about .personal_descr .hexagon_small_container--bg1 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          background: inherit;
-          -webkit-transform: rotate(60deg);
-                  transform: rotate(60deg); }
-          #about .personal_descr .hexagon_container--bg1:after, #about .personal_descr .hexagon_small_container--bg1:after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: 0;
-            width: 100%;
-            height: 200%;
-            background: inherit;
-            -webkit-transform: rotate(-60deg);
-                    transform: rotate(-60deg); }
-        #about .personal_descr .hexagon_container--bg2, #about .personal_descr .hexagon_small_container--bg2 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          background: inherit;
-          -webkit-transform: rotate(-60deg);
-                  transform: rotate(-60deg); }
-          #about .personal_descr .hexagon_container--bg2:after, #about .personal_descr .hexagon_small_container--bg2:after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: 0;
-            width: 100%;
-            height: 200%;
-            background: inherit;
-            -webkit-transform: rotate(60deg);
-                    transform: rotate(60deg); }
-      #about .personal_descr .hexagon:after, #about .personal_descr .hexagon:before, #about .personal_descr .hexagon_small:after, #about .personal_descr .hexagon_small:before {
-        content: '';
+    box-sizing: border-box; }
+    .personal_descr .hexagon_container, .personal_descr .hexagon_small_container {
+      height: 100px;
+      background: url("../img/foto.jpg") no-repeat left center;
+      background-size: cover; }
+      .personal_descr .hexagon_container--bg1, .personal_descr .hexagon_small_container--bg1 {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%ыщту;
-        box-sizing: border-box; }
-      #about .personal_descr .hexagon:after, #about .personal_descr .hexagon_small:after {
+        height: 100%;
+        overflow: hidden;
+        background: inherit;
         -webkit-transform: rotate(60deg);
                 transform: rotate(60deg); }
-      #about .personal_descr .hexagon:before, #about .personal_descr .hexagon_small:before {
+        .personal_descr .hexagon_container--bg1:after, .personal_descr .hexagon_small_container--bg1:after {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: 0;
+          width: 100%;
+          height: 200%;
+          background: inherit;
+          -webkit-transform: rotate(-60deg);
+                  transform: rotate(-60deg); }
+      .personal_descr .hexagon_container--bg2, .personal_descr .hexagon_small_container--bg2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: inherit;
         -webkit-transform: rotate(-60deg);
                 transform: rotate(-60deg); }
-    #about .personal_descr .hexagon_small {
-      width: 90px; }
-      #about .personal_descr .hexagon_small_container {
-        height: 50px; }
-  #about h3 {
+        .personal_descr .hexagon_container--bg2:after, .personal_descr .hexagon_small_container--bg2:after {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: 0;
+          width: 100%;
+          height: 200%;
+          background: inherit;
+          -webkit-transform: rotate(60deg);
+                  transform: rotate(60deg); }
+    .personal_descr .hexagon:after, .personal_descr .hexagon:before, .personal_descr .hexagon_small:after, .personal_descr .hexagon_small:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box; }
+    .personal_descr .hexagon:after, .personal_descr .hexagon_small:after {
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg); }
+    .personal_descr .hexagon:before, .personal_descr .hexagon_small:before {
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg); }
+  .personal_descr .hexagon_small {
+    width: 90px; }
+    .personal_descr .hexagon_small_container {
+      height: 50px; }
+  .personal_descr h3 {
     margin-top: 75px;
     color: #920101;
     text-align: center; }
-  #about h4 {
+  .personal_descr h4 {
     margin-top: 25px;
     color: #A9A9A9;
     text-transform: uppercase;
     text-align: center; }
-  #about p {
+  .personal_descr p {
     width: 75%;
     margin: 0 auto;
     color: #dcdcdc;
     text-align: center; }
-  #about .slider {
-    position: relative;
-    width: 100%; }
-    #about .slider li {
-      list-style-type: none; }
-    #about .slider_first {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -450px; }
-    #about .slider_second {
-      position: absolute;
-      top: 50px;
-      left: 95%; }
-      #about .slider_second .personal_descr {
-        height: 400px;
-        background-color: rgba(3, 3, 3, 0.6);
-        box-shadow: none;
-        cursor: pointer; }
 
-.fixed {
-  background-color: rgba(3, 3, 3, 0.6); }
+.slider {
+  position: relative;
+  width: 100%; }
+  .slider li {
+    position: absolute;
+    list-style-type: none; }
+  .slider_first {
+    top: 0;
+    left: 50%;
+    margin-left: -450px; }
+  .slider_second {
+    top: 50px;
+    left: 95%; }
+    .slider_second .personal_descr {
+      height: 400px;
+      background-color: #222222;
+      opacity: 0.6;
+      box-shadow: none;
+      cursor: pointer; }
+  .slider_third {
+    top: 50px;
+    left: 100%; }
+    .slider_third .personal_descr {
+      height: 400px;
+      background-color: #222222;
+      opacity: 0.6;
+      box-shadow: none;
+      cursor: pointer; }
+  .slider_fourth {
+    top: 50px;
+    left: 120%; }
+    .slider_fourth .personal_descr {
+      height: 400px;
+      background-color: #222222;
+      opacity: 0.6;
+      box-shadow: none;
+      cursor: pointer; }
 
 /*--------------------------Skills--------------------------*/
 #skills {
@@ -180,7 +154,7 @@
   background-color: #222222; }
   #skills h2 {
     margin-bottom: 50px;
-    padding: 4% 0;
+    padding: 3% 0;
     color: #FF2430;
     background-image: url("../img/svg/hexagon_round_bg_dark.svg");
     background-repeat: no-repeat;
@@ -219,6 +193,9 @@
   background-position: center;
   background-size: cover; }
 
+#portfolio .row {
+  margin: 0; }
+
 .portfolio__item {
   width: 100%;
   padding: 15% 0;
@@ -247,9 +224,9 @@
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
   .portfolio__item--description .button {
-    display: inline-block;
+    display: block;
     width: 60%;
-    margin-top: 15px;
+    margin: 15px auto 0 auto;
     padding: 5% 0;
     border: 2px solid #dcdcdc;
     border-radius: 45px;
@@ -268,7 +245,7 @@
 
 /*-------------------------Contact-------------------------*/
 #contact {
-  padding: 2% 10% 5% 10%;
+  padding: 2% 0 5% 0;
   background-color: #dcdcdc; }
   #contact h2 {
     margin: 0;
@@ -321,7 +298,7 @@
         transition: all 0.5s; }
   #contact ul {
     width: 100%;
-    padding: 15% 5%;
+    padding: 12% 5%;
     text-align: center;
     background-image: url("../img/svg/hexagon_round.svg");
     background-repeat: no-repeat;
