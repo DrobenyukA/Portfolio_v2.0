@@ -153,7 +153,7 @@
     width: 60px;
     height: 60px;
     margin-top: -30px;
-    background-image: url("../img/svg/fa_hex.svg");
+    background-image: url("../img/svg/hex_arr_left.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -165,7 +165,7 @@
     width: 60px;
     height: 60px;
     margin-top: -30px;
-    background-image: url("../img/svg/fa_hex.svg");
+    background-image: url("../img/svg/hex_arr_right.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -173,6 +173,7 @@
 
 /*--------------------------Skills--------------------------*/
 #skills {
+  position: relative;
   padding: 5% 0 10% 0;
   color: #dcdcdc;
   background-color: #222222; }
@@ -197,11 +198,11 @@
     border-color: transparent; }
   #skills h3 {
     color: #920101;
-    font-size: 26px;
+    font-size: 30px;
     text-align: center; }
   #skills p {
     padding: 5% 0;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center; }
 
 #language, #frameworks, #software, #opersys {
