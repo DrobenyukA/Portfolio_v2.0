@@ -123,6 +123,10 @@ function getSlideFirst(){
 	});
 	/*Move third slider*/
 	$('.slider_third').css('left', '100%');
+
+	/*hide button*/
+	$('.slider_left').css('visibility', 'hidden');
+	$('.slider_right').attr('onclick', 'getSlideSecond()');
 };
 
 /*----- Second slider -----*/
@@ -195,6 +199,11 @@ function getSlideSecond(){
 	});
 	/*Show third slider*/
 	$('.slider_third').css('left', '95%');
+	
+	/*Show right button*/
+	$('.slider_left').css('visibility', 'visible');
+	$('.slider_right').attr('onclick', 'getSlideThird()');
+
 };
 
 /*------- Third slider -------*/
@@ -231,6 +240,8 @@ function getSlideThird(){
 			$(this).removeAttr('onclick', null);
 			$(this).attr('onclick', 'getSlideSecondBack();');
 	});
+	/*change left function*/
+	$('.slider_left').attr('onclick', 'getSlideSecondBack()');
 
 	/* Show third slider*/
 	$('.slider_third').animate({
@@ -269,6 +280,9 @@ function getSlideThird(){
 	});
 
 	$('.slider_fourth').css('left', '95%');
+
+	/**/
+	$('.slider_right').attr('onclick', 'getSlideFourth()');
 }
 
 /*----- get second slider back-----*/
@@ -304,6 +318,9 @@ function getSlideSecondBack(){
 			})
 			$(this).attr('onclick', 'getSlideThird();');
 	});
+	/*change right button*/
+	$('.slider_left').attr('onclick', 'getSlideFirst()');
+	$('.slider_right').attr('onclick', 'getSlideThird()');
 
 	/* Show back second slider */
 	$('.slider_second').animate({
@@ -380,6 +397,8 @@ function getSlideFourth(){
 			$(this).removeAttr('onclick', null);
 			$(this).attr('onclick', 'getSlideThirdBack();');
 	});
+	/*hide right button*/
+	$('.slider_right').css('visibility', 'hidden');
 
 	/* Show third slider*/
 	$('.slider_fourth').animate({
@@ -418,6 +437,9 @@ function getSlideFourth(){
 	});
 
 	$('.slider_second').css('left', '-63%');
+
+	/*change left buttom*/
+	$('.slider_left').attr('onclick', 'getSlideThirdBack()');
 }
 
 /*----- get third slider back-----*/
@@ -453,6 +475,7 @@ function getSlideThirdBack(){
 			})
 			$(this).attr('onclick', 'getSlideFourth();');
 	});
+	$('.slider_left').attr('onclick', 'getSlideSecondBack()');
 
 	/* Show back second slider */
 	$('.slider_third').animate({
@@ -492,4 +515,7 @@ function getSlideThirdBack(){
 	/*Move first slider*/
 	$('.slider_second').css('left', '-53%');
 	$('.slider_fourth').css('left', '95%');
+
+	/*show right button*/
+	$('.slider_right').css('visibility', 'visible');
 }
