@@ -29,13 +29,14 @@
   box-shadow: 3px 3px 15px #030303; }
   .personal_descr .hexagon, .personal_descr .hexagon_small {
     position: relative;
-    width: 175px;
+    width: 240px;
     margin: 0 auto;
     box-sizing: border-box; }
     .personal_descr .hexagon_container, .personal_descr .hexagon_small_container {
-      height: 100px;
+      height: 140px;
       background: url("../img/foto.jpg") no-repeat left center;
-      background-size: cover; }
+      background-position: center;
+      background-size: 280px 280px; }
       .personal_descr .hexagon_container--bg1, .personal_descr .hexagon_small_container--bg1 {
         position: absolute;
         top: 0;
@@ -97,7 +98,8 @@
   .personal_descr h3 {
     margin-top: 75px;
     color: #920101;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Chivo-Black'; }
   .personal_descr h4 {
     margin-top: 25px;
     color: #A9A9A9;
@@ -108,6 +110,20 @@
     margin: 0 auto;
     color: #dcdcdc;
     text-align: center; }
+  .personal_descr--mod {
+    margin-top: -80px; }
+    .personal_descr--mod h3 {
+      margin-top: 50px;
+      margin-bottom: 35px;
+      font-family: 'Chivo-Black'; }
+    .personal_descr--mod h5 {
+      text-align: center; }
+      .personal_descr--mod h5 span {
+        padding: 3px 10px;
+        background-color: #920101;
+        color: #A9A9A9;
+        font-family: 'Chivo-Black';
+        font-size: 16px; }
 
 .slider {
   position: relative;

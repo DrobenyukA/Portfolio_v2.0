@@ -48,6 +48,10 @@
     font-size: 4vw; }
   #skills .text {
     padding-top: 0; }
+  .personal_descr p {
+    width: 55%; }
+  .personal_descr p:nth-child(5) {
+    width: 40%; }
   .portfolio__item--description .button {
     width: 30%;
     padding: 2% 0; }
@@ -76,6 +80,10 @@
     font-size: 9vw; }
   #skills p {
     font-size: 7vw; }
+  .personal_descr p {
+    width: 50%; }
+  .personal_descr p:nth-child(5) {
+    width: 30%; }
   .portfolio__item--description .button {
     width: 40%; } }
 
