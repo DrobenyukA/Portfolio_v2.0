@@ -116,6 +116,11 @@
       margin-top: 50px;
       margin-bottom: 35px;
       font-family: 'Chivo-Black'; }
+    .personal_descr--mod h4 {
+      padding-top: 15px;
+      margin-bottom: 25px;
+      color: #920101;
+      font-family: 'Chivo-Black'; }
     .personal_descr--mod h5 {
       text-align: center; }
       .personal_descr--mod h5 span {
