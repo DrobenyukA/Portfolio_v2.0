@@ -234,15 +234,12 @@
 		margin: 0
 .portfolio__item
 	width: 100% 
-	padding: 15% 0
+	padding: 15% 0 25% 0
 	background-color: $theme_color
 	color: $text_color
 	text-align: center
-	&--icon
-		margin-bottom: 400px
-		text-align: center
-		color: #fff
 	&--description
+		margin-top: 60vh
 		h3
 			margin-bottom: 50px
 			color: $text_color
@@ -348,3 +345,36 @@ footer
 	background-color: $theme_header_color
 	color: $text_color
 	text-align: center
+
+/*SVG style*/
+.logo
+	&-1
+		fill: $main_color 
+	&-2
+		fill: $theme_text_color
+.social__icon
+	fill-opacity: 0.05
+	&:hover
+		fill-opacity: 1
+		transition: all 300ms
+	&--fb_body
+		fill: #3a5897
+	&--gp_body
+		fill: #d40000
+	&--in_body
+		fill: #0177b5
+	&--tw_body
+		fill: #00aad4
+	&--git_body
+		fill: #000000
+	&--fb_char,
+	&--gp_char,
+	&--gp_char_1,
+	&--in_char,
+	&--tw-char,
+	&--git_char
+		fill: #fff
+		fill-opacity: 1
+		stroke: #000000
+		stroke-width: 0.15531437
+		stroke-opacity: 1

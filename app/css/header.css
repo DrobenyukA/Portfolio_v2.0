@@ -18,7 +18,7 @@ header {
     width: 9vw;
     height: 9vw; }
 
-#small_logo {
+.menu_content .logo {
   width: 70px;
   height: 70px; }
 
@@ -65,8 +65,8 @@ nav {
       text-transform: uppercase;
       text-decoration: none; }
       .menu_content li a:hover {
-        background-color: rgba(3, 3, 3, 0.6);
-        color: rgba(255, 0, 0, 0.6);
+        background-color: rgba(3, 3, 3, 0.8);
+        color: rgba(146, 1, 1, 0.6);
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
     .menu_content li:first-child {
@@ -90,5 +90,5 @@ nav {
   top: 0;
   left: 0;
   height: 75px;
-  background-color: rgba(3, 3, 3, 0.6);
+  background-color: rgba(3, 3, 3, 0.8);
   z-index: 5; }
