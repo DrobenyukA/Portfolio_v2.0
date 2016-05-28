@@ -16,27 +16,27 @@ function heightDetect(){
 
 	/*------------PARALAX------------*/
 	$('#header').parallax({
-		imageSrc: '../img/header_bg_1.jpg',
+		imageSrc: '../Portfolio_v2.0/img/header_bg_1.jpg',
 		zIndex: '-1'
 	});
 
 	$('.first').parallax({
-		imageSrc: '../img/project_1.jpg',
+		imageSrc: '../Portfolio_v2.0/img/project_1.jpg',
 		zIndex: '-1'
 	});
 
 	$('.second').parallax({
-		imageSrc: '../img/project_2.jpg',
+		imageSrc: '../Portfolio_v2.0/img/project_2.jpg',
 		zIndex: '-1'
 	});
 
 	$('.third').parallax({
-		imageSrc: '../img/project_3.jpg',
+		imageSrc: '../Portfolio_v2.0/img/project_3.jpg',
 		zIndex: '-1'
 	});
 
 	$('.fourth').parallax({
-		imageSrc: '../img/project_4.jpg',
+		imageSrc: '../Portfolio_v2.0/img/project_4.jpg',
 		zIndex: '-1'
 	});
 
