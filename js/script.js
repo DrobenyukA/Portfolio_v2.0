@@ -16,12 +16,12 @@ function heightDetect(){
 
 	/*------------PARALAX------------*/
 	$('#header').parallax({
-		imageSrc: 'Portfolio_v2.0/img/header_bg_1.jpg',
+		imageSrc: '../img/header_bg_1.jpg',
 		zIndex: '-1'
 	});
 
 	$('.first').parallax({
-		imageSrc: 'Portfolio_v2.0/img/project_1.jpg',
+		imageSrc: '../Portfolio_v2.0/img/project_1.jpg',
 		zIndex: '-1'
 	});
 
