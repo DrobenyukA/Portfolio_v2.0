@@ -3,56 +3,13 @@
 /*----------------*About*----------------*/
 #about
 	background-image: url('../img/about_bg.jpg')
+	overflow-x: hidden
 	.wrapper
 		position: relative
 		width: 100%
 		height: 800px
 		padding: 5% 0
 		background-color: $theme_color
-		nav
-			position: absolute
-			width: 100%
-			top: -100px
-			z-index: 2
-			ul 
-				margin: 0
-				padding: 5px
-				width: 100%
-				margin: 0 auto
-				cursor: context-menu
-				li
-					display: inline-block
-					height: 50px
-					color: $text_color
-					line-height: 50px
-					text-decoration: none
-					text-transform: uppercase
-					font-family: "Chivo-Bold"
-					vertical-align: middle
-					a
-						padding: 15px 30px
-						color: inherit
-						&:hover
-							color: $theme_color
-							transition: all 0.5s
-							background-color: $main_color_hover
-							text-decoration: none
-					&:first-child
-						a:hover
-							background-color: transparent
-					svg
-						width: 50px
-						height: 50px
-						margin-right: 45px
-			.social
-				li
-					margin-left: 5px
-					a
-						padding: 0
-						&:hover
-							background-color: transparent
-						svg
-							margin: 0
 	h2
 		margin-bottom: 50px
 		color: $header_color
@@ -62,80 +19,82 @@
 		text-transform: uppercase
 		text-shadow: 0 0 5px $main_color
 		letter-spacing: 2px
-	.personal_descr
-		width: 900px
-		height: 500px
+.personal_descr
+	width: 900px
+	height: 500px
+	margin: 0 auto
+	padding: 2% 5%
+	padding-top: 105px
+	border-radius: 2px 
+	background-color: $main_color_bg
+	box-shadow: 3px 3px 15px $main_color
+	.hexagon, .hexagon_small
+		position: relative
+		width: 240px
 		margin: 0 auto
-		padding: 2% 5%
-		padding-top: 105px
-		border-radius: 2px 
-		background-color: $main_color_bg
-		box-shadow: 3px 3px 15px $main_color
-		.hexagon, .hexagon_small
-			position: relative
-			width: 175px
-			margin: 0 auto
-			box-sizing: border-box
-			&_container
-				height: 100px
-				background: url('../img/foto.jpg') no-repeat left center
-				background-size: cover
-				&--bg1 
-					position: absolute
-					top: 0
-					left: 0
-					width: 100%
-					height: 100%
-					overflow: hidden
-					background: inherit
-					transform: rotate(60deg)
-					&:after
-						content: ''
-						position: absolute
-						top: -50%
-						left: 0
-						width: 100%
-						height: 200%
-						background: inherit
-						transform: rotate(-60deg)
-				&--bg2 
-					position: absolute
-					top: 0
-					left: 0
-					width: 100%
-					height: 100%
-					overflow: hidden
-					background: inherit
-					transform: rotate(-60deg)
-					&:after
-						content: ''
-						position: absolute
-						top: -50%
-						left: 0
-						width: 100%
-						height: 200%
-						background: inherit
-						transform: rotate(60deg)
-			&:after, &:before
-				content: ''
+		box-sizing: border-box
+		&_container
+			height: 140px
+			background: url('../img/foto.jpg') no-repeat left center
+			background-position: center
+			background-size: 280px 280px
+			&--bg1 
 				position: absolute
 				top: 0
 				left: 0
 				width: 100%
-				height: 100%ыщту
-				box-sizing: border-box
-			&:after
+				height: 100%
+				overflow: hidden
+				background: inherit
 				transform: rotate(60deg)
-			&:before
-				transform: rotate(-60deg)	
-		.hexagon_small
-			width: 90px
-			&_container
-				height: 50px
+				&:after
+					content: ''
+					position: absolute
+					top: -50%
+					left: 0
+					width: 100%
+					height: 200%
+					background: inherit
+					transform: rotate(-60deg)
+			&--bg2 
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				overflow: hidden
+				background: inherit
+				transform: rotate(-60deg)
+				&:after
+					content: ''
+					position: absolute
+					top: -50%
+					left: 0
+					width: 100%
+					height: 200%
+					background: inherit
+					transform: rotate(60deg)
+		&:after, &:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			box-sizing: border-box
+		&:after
+			transform: rotate(60deg)
+		&:before
+			transform: rotate(-60deg)	
+	.hexagon_small
+		width: 90px
+		&_container
+			height: 50px
 	h3
 		margin-top: 75px
 		color: $theme_text_color
 		text-align: center
+		font-family: 'Chivo-Black'
 	h4
 		margin-top: 25px
 		color: $header_color
@@ -146,37 +105,95 @@
 		margin: 0 auto 
 		color: $text_color
 		text-align: center
-	.slider
-		position: relative
-		width: 100%
-		li
-			list-style-type: none
-		&_first
-			position: absolute
-			top: 0
-			left: 50%
-			margin-left: -450px
-		&_second
-			position: absolute
-			top: 50px
-			left: 95%
-			.personal_descr
-				height: 400px
-				background-color: $main_color_hover
-				box-shadow: none
-				cursor: pointer
-		&_third
-		&_fourth
-.fixed
-	background-color: $main_color_hover
+	&--mod
+		margin-top: -80px
+		h3
+			margin-top: 50px
+			margin-bottom: 35px
+			font-family: 'Chivo-Black'
+		h4
+			padding-top: 15px
+			margin-bottom: 25px
+			color: $theme_text_color
+			font-family: 'Chivo-Black'
+		h5
+			text-align: center
+			span
+				padding: 3px 10px
+				background-color: $theme_text_color
+				color: $header_color
+				font-family: 'Chivo-Black'
+				font-size: 16px
+.slider
+	position: relative
+	width: 100%
+	li
+		position: absolute
+		list-style-type: none
+	&_first
+		top: 0
+		left: 50%
+		margin-left: -450px
+	&_second 
+		top: 50px
+		left: 95%
+		.personal_descr
+			height: 400px
+			background-color: $main_color_bg
+			opacity: 0.6
+			box-shadow: none
+			cursor: pointer
+	&_third
+		top: 50px
+		left: 100%
+		.personal_descr
+			height: 400px
+			background-color: $main_color_bg
+			opacity: 0.6
+			box-shadow: none
+			cursor: pointer
+	&_fourth
+		top: 50px
+		left: 120%
+		.personal_descr
+			height: 400px
+			background-color: $main_color_bg
+			opacity: 0.6
+			box-shadow: none
+			cursor: pointer
+	&_left
+		position: absolute
+		top: 50%
+		left: 5px
+		width: 60px
+		height: 60px
+		margin-top: -30px
+		background-image: url('../img/svg/hex_arr_left.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		cursor: pointer		
+	&_right
+		position: absolute
+		top: 50%
+		right: 5px
+		width: 60px
+		height: 60px
+		margin-top: -30px
+		background-image: url('../img/svg/hex_arr_right.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		cursor: pointer
 /*--------------------------Skills--------------------------*/
 #skills
+	position: relative
 	padding: 5% 0 10% 0
 	color: $text_color
 	background-color: $main_color_bg
 	h2
 		margin-bottom: 50px
-		padding: 4% 0
+		padding: 3% 0
 		color: $theme_header_color
 		background-image: url('../img/svg/hexagon_round_bg_dark.svg')
 		background-repeat: no-repeat
@@ -195,11 +212,11 @@
 		border-color: transparent
 	h3
 		color: $theme_text_color
-		font-size: 26px
+		font-size: 30px
 		text-align: center
 	p
 		padding: 5% 0
-		font-size: 18px
+		font-size: 22px
 		text-align: center
 #language, #frameworks, #software, #opersys
 	display: block
@@ -212,18 +229,17 @@
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
-
+#portfolio
+	.row
+		margin: 0
 .portfolio__item
 	width: 100% 
-	padding: 15% 0
+	padding: 15% 0 25% 0
 	background-color: $theme_color
 	color: $text_color
 	text-align: center
-	&--icon
-		margin-bottom: 400px
-		text-align: center
-		color: #fff
 	&--description
+		margin-top: 60vh
 		h3
 			margin-bottom: 50px
 			color: $text_color
@@ -241,9 +257,9 @@
 				background-color: $main_color_hover
 				transition: all 0.5s
 		.button
-			display: inline-block
+			display: block
 			width: 60%
-			margin-top: 15px
+			margin: 15px auto 0 auto
 			padding: 5% 0
 			border: 2px solid $text_color
 			border-radius: 45px
@@ -261,7 +277,7 @@
 
 /*-------------------------Contact-------------------------*/
 #contact
-	padding: 2% 10% 5% 10%
+	padding: 2% 0 5% 0
 	background-color: $text_color
 	h2
 		margin: 0
@@ -312,7 +328,7 @@
 				transition: all 0.5s
 	ul
 		width: 100%
-		padding: 15% 5%
+		padding: 12% 5%
 		text-align: center
 		background-image: url('../img/svg/hexagon_round.svg')
 		background-repeat: no-repeat
@@ -329,3 +345,36 @@ footer
 	background-color: $theme_header_color
 	color: $text_color
 	text-align: center
+
+/*SVG style*/
+.logo
+	&-1
+		fill: $main_color 
+	&-2
+		fill: $theme_text_color
+.social__icon
+	fill-opacity: 0.05
+	&:hover
+		fill-opacity: 1
+		transition: all 300ms
+	&--fb_body
+		fill: #3a5897
+	&--gp_body
+		fill: #d40000
+	&--in_body
+		fill: #0177b5
+	&--tw_body
+		fill: #00aad4
+	&--git_body
+		fill: #000000
+	&--fb_char,
+	&--gp_char,
+	&--gp_char_1,
+	&--in_char,
+	&--tw-char,
+	&--git_char
+		fill: #fff
+		fill-opacity: 1
+		stroke: #000000
+		stroke-width: 0.15531437
+		stroke-opacity: 1
